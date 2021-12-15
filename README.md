@@ -1,10 +1,12 @@
 # Time Waits for No One
 
-We provide the processed datasets for a subset of our 8 tasks.
+We provide the processed datasets for a subset of our 8 tasks. All released datasets are intended for non-commercial use.
 
 ## Twitter 
 
-We provide labels and tweet IDs and omit the labels for the political affiliation task. For the twitter NER data, please see [Shruti's Github](https://github.com/shrutirij/temporal-twitter-corpus). For reproducibility, we provide scripts for processing this data.
+We provide labels and tweet IDs and omit the content for the political affiliation task, in accordance with the Twitter License Agreement. These tweets were collected via [Twitter API for Academic Research] and is intended for non-commercial use.
+
+ For the twitter NER data, please see [Shruti's Github](https://github.com/shrutirij/temporal-twitter-corpus). For reproducibility, we provide scripts for processing this data.
 
 ## Media Frames Corpus
 
@@ -17,6 +19,10 @@ For both newsroom summarization and publisher classification, we used the [Newsr
 ## SciERC
 
 We use the [SciERC](http://nlp.cs.washington.edu/sciIE/) dataset. We also provide scripts for processing this data.
+
+## AI Publisher
+
+We use data from the Semantic Scholar API, which is licensed under an ODC-BY. We release our data splits for this task.
 
 ## Yelp. 
 
