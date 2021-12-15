@@ -105,7 +105,7 @@ def process_file(file, split):
             name = f'{year}.{split}.forlabels.scores'
             if split == 'train':
                 name = 'indivs/' + name
-            outfile = open(f"/Users/danielk/ideaProjects/temporal_drift/newsroom/summarization/{split}/{name}", '+w')
+            outfile = open(f"/Users/user/ideaProjects/temporal_drift/newsroom/summarization/{split}/{name}", '+w')
             for row in summarization_rows_per_year[year][:summarization_min_count]:
                 outfile.write(json.dumps(row) + "\n")
 
@@ -118,7 +118,7 @@ def process_file(file, split):
             name = f'{year}.{split}.txt'
             if split == 'train':
                 name = 'indivs/' + name
-            outfile = open(f"/Users/danielk/ideaProjects/temporal_drift/newsroom/newsroom_dapt/{split}/{name}", '+w')
+            outfile = open(f"/Users/user/ideaProjects/temporal_drift/newsroom/newsroom_dapt/{split}/{name}", '+w')
             for row in summarization_rows_per_year[year][:summarization_min_count]:
                 outfile.write(row['text'] + "\n")
 
@@ -142,7 +142,7 @@ def process_file(file, split):
             name = f'{year}.{split}.forlabels.scores'
             if split == 'train':
                 name = 'indivs/' + name
-            outfile = open(f"/Users/danielk/ideaProjects/temporal_drift/newsroom/newsroom_source_classification/{split}/{name}", '+w')
+            outfile = open(f"/Users/user/ideaProjects/temporal_drift/newsroom/newsroom_source_classification/{split}/{name}", '+w')
 
             rows = classification_rows_per_year_and_class[f"{year}_0"][:classification_min_count_across_years_and_cats]
             rows += classification_rows_per_year_and_class[f"{year}_1"][:classification_min_count_across_years_and_cats]
@@ -152,7 +152,7 @@ def process_file(file, split):
                 outfile.write(json.dumps(row) + "\n")
 
 
-process_file('/Users/danielk/ideaProjects/temporal_drift/newsroom/release/dev.jsonl', 'dev')
-process_file('/Users/danielk/ideaProjects/temporal_drift/newsroom/release/test.jsonl', 'test')
-process_file('/Users/danielk/ideaProjects/temporal_drift/newsroom/release/train.jsonl', 'train')
+process_file('/Users/user/ideaProjects/temporal_drift/newsroom/release/dev.jsonl', 'dev')
+process_file('/Users/user/ideaProjects/temporal_drift/newsroom/release/test.jsonl', 'test')
+process_file('/Users/user/ideaProjects/temporal_drift/newsroom/release/train.jsonl', 'train')
 

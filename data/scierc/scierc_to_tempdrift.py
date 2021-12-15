@@ -18,14 +18,14 @@ for split in ['test', 'dev', 'train']:
     if split == 'train':
         sep1 = '/indivs'
         sep2 = 'indivs.'
-    outfiles[split + '1980'] = open(f'/Users/danielk/ideaProjects/temporal_drift/sciERC_temporal/{split}{sep1}/1980-1989.{split}.{sep2}forlabels.scores', 'w+')
-    outfiles[split + '1990'] = open(f'/Users/danielk/ideaProjects/temporal_drift/sciERC_temporal/{split}{sep1}/1990-1999.{split}.{sep2}forlabels.scores', 'w+')
-    outfiles[split + '2000'] = open(f'/Users/danielk/ideaProjects/temporal_drift/sciERC_temporal/{split}{sep1}/2000-2004.{split}.{sep2}forlabels.scores', 'w+')
-    outfiles[split + '2005'] = open(f'/Users/danielk/ideaProjects/temporal_drift/sciERC_temporal/{split}{sep1}/2005-2009.{split}.{sep2}forlabels.scores', 'w+')
-    outfiles[split + '2010'] = open(f'/Users/danielk/ideaProjects/temporal_drift/sciERC_temporal/{split}{sep1}/2010-2004.{split}.{sep2}forlabels.scores', 'w+')
-    outfiles[split + '2015'] = open(f'/Users/danielk/ideaProjects/temporal_drift/sciERC_temporal/{split}{sep1}/2015-2016.{split}.{sep2}forlabels.scores', 'w+')
+    outfiles[split + '1980'] = open(f'/Users/ideaProjects/temporal_drift/sciERC_temporal/{split}{sep1}/1980-1989.{split}.{sep2}forlabels.scores', 'w+')
+    outfiles[split + '1990'] = open(f'/Users/ideaProjects/temporal_drift/sciERC_temporal/{split}{sep1}/1990-1999.{split}.{sep2}forlabels.scores', 'w+')
+    outfiles[split + '2000'] = open(f'/Users/ideaProjects/temporal_drift/sciERC_temporal/{split}{sep1}/2000-2004.{split}.{sep2}forlabels.scores', 'w+')
+    outfiles[split + '2005'] = open(f'/Users/ideaProjects/temporal_drift/sciERC_temporal/{split}{sep1}/2005-2009.{split}.{sep2}forlabels.scores', 'w+')
+    outfiles[split + '2010'] = open(f'/Users/ideaProjects/temporal_drift/sciERC_temporal/{split}{sep1}/2010-2004.{split}.{sep2}forlabels.scores', 'w+')
+    outfiles[split + '2015'] = open(f'/Users/ideaProjects/temporal_drift/sciERC_temporal/{split}{sep1}/2015-2016.{split}.{sep2}forlabels.scores', 'w+')
 
-for subdir, dirs, files in os.walk("/Users/danielk/ideaProjects/temporal_drift/sciERC"):
+for subdir, dirs, files in os.walk("/Users/ideaProjects/temporal_drift/sciERC"):
     per_year_stats = {}
     all_data = {
         1980: [],
